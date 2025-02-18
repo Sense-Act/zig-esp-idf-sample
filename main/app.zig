@@ -2,7 +2,8 @@ const std = @import("std");
 const builtin = @import("builtin");
 const idf = @import("esp_idf");
 
-export fn app_main() callconv(.C) void {
+// export fn app_main() callconv(.C) void {
+export fn log_hello() callconv(.C) void {
     // This allocator is safe to use as the backing allocator w/ arena allocator
     // std.heap.raw_c_allocator
 
